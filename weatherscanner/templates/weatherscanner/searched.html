@@ -1,0 +1,142 @@
+{% extends 'weatherscanner/layout.html' %}
+
+{% load static %}
+{% block 'css' %}
+    <link rel="stylesheet" href="{% static 'css/navbar.css'%}">
+    <link rel="stylesheet" href="{% static 'css/nav_searchbar.css'%}">
+    <link rel="stylesheet" href="{% static 'css/body_nav_foot.css'%}">    
+    <link rel="stylesheet" href="{% static 'css/searched.css'%}">     
+{% endblock %}
+{% block 'js' %}
+    <script type= "text/javascript" src="{% static 'js/logout.js' %}"></script>
+    <script type = "text/javascript" src="{% static 'js/utilities.js'%}"></script>
+    <script type = "text/javascript" src="{% static 'js/searchbar.js'%}"></script>
+    <script type = "text/javascript" src="{% static 'js/searched.js'%}"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>  
+{% endblock %}
+
+{% block 'content' %}
+    {%include 'weatherscanner/navbar.html' %}
+    <div class="container">
+        <div id="actual-weather">
+            <div id="header-icon"> {% if info.icon %}
+                                    {{ info.icon |safe}}
+                                    {% else %} 
+                                    <img src="{% static 'images/notfound_icon.svg' %}" alt="notfound" width="120px">
+                                    {% endif%}
+            </div>
+            <div id="header">
+                <div id="title">
+                    <span id="city"> {{ citta }} </span>
+                    <span id="temp"> {% if info.temp %}
+                                    {{ info.temp}}°C
+                                    {% endif%}</span>
+                </div>
+                <div class="info">  
+                    <span id="meteo"> {% if info.meteo %}
+                                        {{ info.meteo|capfirst }} 
+                                        {% else %} 
+                                        {{ info.notfound}}
+                                        {% endif%}
+                        </span>
+                </div>
+                <div class="info">  {% if info.precip and info.vento and info.umidita %}
+                    <span id="precip"> prec. {{ info.precip }}, </span>
+                    <span id="vento"> vento {{ info.vento }} km/h, </span>
+                    <span id="umid"> umidità {{ info.umidita }}</span>
+                                    {%endif%}
+                </div>
+            </div>
+        </div>
+        {% if request.user.is_authenticated %}
+            <div class="select-accuracy">
+                <span> Seleziona la formula per il calcolo dell'affidabilità:</span>
+                <select name="formula" id="formula">
+                    <option value="mape">MAPE (%)</option>
+                    <option value="rmse">RMSE</option>
+                </select> 
+            </div>
+        {% else %}
+            <div class="select-accuracy">
+                <span>Registrati per selezionare la formula per il calcolo dell'affidabilità</span>
+            </div>
+        {% endif %}
+        <div class="prevs-container">
+            <div class="prevs">
+                {% if request.user.is_authenticated %}
+                    <span class="service">3BMeteo
+                        <span class="accuracy 3bmeteo">(Affidabilità: )</span>
+                    </span>
+                {% else %}
+                    <span class="service">3BMeteo</span>
+                {% endif %}
+                <div class="days-container">
+                    {% for elem in prev_dates%}
+                    <div class="day 3bmeteo" id="{{ elem.data}}_3bmeteo">
+                        <span>{{elem.day }}</span>
+                        <span>{{ elem.string }}</span>
+                        <span class="minmax"></span>
+                    </div>
+                    {% endfor %}
+                    
+                </div>
+                <div class="table-container">
+                    <table class="prevs-table">
+                        <thead>
+                            <tr>
+                                <th>Ora</th>
+                                <th colspan="2">Previsione</th>
+                                <th>Temp.(°C)</th>
+                                <th>Precip.</th>
+                                <th>Vento</th>
+                                <th>Umidità</th>
+                            </tr>
+                        </thead>
+                        <tbody id="3bmeteo">
+                    
+                        </tbody>
+                    </table> 
+                </div>
+            </div>
+
+            <div class="prevs">
+                {% if request.user.is_authenticated %}
+                    <span class="service">Meteo.it
+                        <span class="accuracy 3bmeteo">(Affidabilità: )</span>
+                    </span>
+                {% else %}
+                    <span class="service">Meteo.it</span>
+                {% endif %}
+                <div class="days-container">
+                    {% for elem in prev_dates %}
+                    <div class="day meteoit" id="{{ elem.data}}_meteoit">
+                        <span>{{elem.day }}</span>
+                        <span>{{ elem.string }}</span>
+                        <span class="minmax"></span>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="table-container">
+                    <table class="prevs-table">
+                        <thead>
+                            <tr>
+                                <th>Ora</th>
+                                <th colspan="2">Previsione</th>
+                                <th>Temp.(°C)</th>
+                                <th>Precip.</th>
+                                <th>Vento</th>
+                                <th>Umidità</th>
+                            </tr>
+                        </thead>
+                        <tbody id="meteoit">
+                    
+                        </tbody>
+                    </table> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {%include 'weatherscanner/footer.html' %}
+{% endblock %} 

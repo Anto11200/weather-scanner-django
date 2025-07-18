@@ -1,0 +1,88 @@
+{% extends 'weatherscanner/layout.html' %}
+
+{% load static %}
+{% block 'css' %}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="{% static 'css/navbar.css'%}">
+    <link rel="stylesheet" href="{% static 'css/body_nav_foot.css'%}">    
+    <link rel="stylesheet" href="{% static 'css/nav_searchbar.css'%}">
+    <link rel="stylesheet" href="{% static 'css/accuracy_info.css'%}">        
+{% endblock %}
+{% block 'js'%}
+    <script type= "text/javascript" src="{% static 'js/logout.js' %}"></script>
+    <script type = "text/javascript" src="{% static 'js/utilities.js'%}"></script>
+    <script type = "text/javascript" src="{% static 'js/searchbar.js'%}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>  
+{% endblock %}
+{% block 'content' %}
+    {%include 'weatherscanner/navbar.html' %}
+    <div class="container">
+        <div class="logo"></div>
+        <div class="header">
+            <h1> Come viene calcolata l'affidabilità del servizio? </h1>
+            <p class="subtitle">
+                L'accuratezza delle previsioni fornite dai servizi meteo comparati viene calcolata da <i>Weather Scanner</i> tramite due formule statistiche: il <b>MAPE</b> (<i>Mean Absolute Percentage Error</i>) e il <b>RMSE</b> (<i>Root Mean Squared Error</i>). L'utente può selezionare quale tra le due utilizzare nel calcolo. 
+            </p>
+        </div>
+        <div class="cont-formule">
+            <div class="formula">
+                <h2>MAPE</h2>
+                <p>Il <i>Mean Absolute Percentage Error</i> 
+                calcola la percentuale di errore medio tra i valori previsti e i valori effettivi. È particolarmente utile quando si desidera valutare la precisione di un modello rispetto a diverse serie di dati. In particolare, il calcolo è il seguente:</p>
+                <div class="math">
+                    <span>$$MAPE = \frac{1}{N}\cdot\sum_{t=1}^{N}\left(\frac{|x_t - y_t|}{y_t}\right)\cdot 100 $$</span>
+                </div>
+                <p>Dove:</p>
+                    <ul>
+                        <li><i>N</i> è il numero di osservazioni</li>
+                        <li><i>x</i> sono le previsioni meteo</li>
+                        <li><i>y</i> sono le condizioni meteo attuali osservate</li>
+                    </ul><p>
+                        Il risultato del MAPE viene espresso come percentuale. Un valore di MAPE più basso indica una maggiore precisione del modello, mentre un valore più alto indica una maggiore discrepanza tra le previsioni e i valori effettivi.
+                    </p>
+            </div>
+            <div class="formula">
+                <h2>RMSE</h2>
+                <p>Il <i>Root Mean Squared Error</i> 
+                    misura la deviazione standard dei residui, cioè la differenza tra i valori previsti e i valori effettivi dei dati. Il RMSE calcola la radice quadrata della media dei quadrati degli errori residui. La formula per calcolare il RMSE è la seguente:</p>
+                    <div class="math">
+                        <span>$$RMSE = \sqrt{\frac{1}{N}\cdot\sum_{t=1}^{N}(x_t - y_t)^2} $$</span>
+                    </div>
+                    <p>Dove:</p>
+                        <ul>
+                            <li><i>N</i> è il numero di osservazioni</li>
+                            <li><i>x</i> sono le previsioni meteo</li>
+                            <li><i>y</i> sono le condizioni meteo attuali osservate</li>
+                        </ul>
+                    <p>
+                        Un valore di RMSE più basso indica una minore deviazione tra i valori previsti e i valori effettivi, indicando quindi una maggiore accuratezza del modello.
+                        Il RMSE penalizza maggiormente gli errori più grandi rispetto a quelli più piccoli. 
+                    </p>
+            </div>
+        </div> 
+        <div class="header">
+            <h2>  E l'ottimismo/pessimismo delle previsioni? </h2>
+            <p class="subtitle">
+                Per valutare se le previsioni di un servizio meteo tendono ad essere ottimistiche o pessimistiche, <i>Weather Scanner</i> calcola l'errore di tendenza, o <i>bias</i>, ovvero la differenza media tra le previsioni e i valori osservati e può essere utilizzato per valutare la tendenza di sovrastima o sottostima di un servizio di previsione. 
+            </p>
+        </div>
+        <div class="cont-formule">
+            <div class="formula">
+                <p>In particolare, la formula per il calcolo del bias è la seguente:</p>
+                <div class="math">
+                    <span>$$ bias= \frac{1}{N}\cdot\sum_{t=1}^{N}(x_t - y_t)$$</span>
+                </div>
+                <p>Dove:</p>
+                    <ul>
+                        <li><i>N</i> è il numero di osservazioni</li>
+                        <li><i>x</i> sono le previsioni meteo</li>
+                        <li><i>y</i> sono le condizioni meteo attuali osservate</li>
+                    </ul><p>
+                        Un valore positivo indica una tendenza alla sovrastima, mentre un valore negativo indica una tendenza alla sottostima.
+                    </p>
+            </div>
+        </div> 
+    </div>
+    {%include 'weatherscanner/footer.html' %}
+{% endblock %} 

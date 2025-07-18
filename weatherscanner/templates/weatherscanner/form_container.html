@@ -1,0 +1,25 @@
+<div class="form-container">
+    <h2>Login</h2>
+    <form id="login-form" method="post" autocomplete="current-password">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label for="id_username">Username</label>
+            <div class="input-container">
+                <input id="id_username" type="text" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="id_password">Password</label>
+            <div class="input-container">
+                <input id="id_password" type="password" required>
+            </div>
+        </div>    
+        
+        <button type="submit" class="btn btn-primary">Accedi</button>
+    </form>
+    
+    <p class="small-text">
+        Non hai un account? <a href="{% url 'register' %}">Registrati</a>
+    </p>
+</div>

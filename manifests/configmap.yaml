@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-django
+  labels:
+    app: django
+data: 
+  DB_NAME : weatherdb
+  DB_USER : utente
+  DB_HOST : 192.168.0.107
+  DB_PORT : "3306"

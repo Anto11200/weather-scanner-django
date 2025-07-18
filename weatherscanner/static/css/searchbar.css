@@ -1,0 +1,115 @@
+/* ! NOTA: DETERMINARE LA GRANDEZZA DELLA BARRA NEL CSS RELATIVO ALLA PAGINA */
+
+/* .search-container {
+    width: 45%;
+} */
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.search-bar {
+    display: flex;
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+/* border radius da applicare quando è nascosto il div con i suggerimenti delle città */
+.radius {
+    border-radius: 10px;
+}
+
+/* border radius da applicare quando è visibile il div con i suggerimenti delle città */
+.radius-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#search {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 18px;
+    margin-left: 30px;
+    justify-self: flex-start;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    color: #5d68a5;
+
+}
+
+::-webkit-input-placeholder{ /* WebKit browsers (Safari, Google Chrome, Opera 15+) */
+    color: #5d68a5;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#lens {
+    font-size: 25px;
+    color: #5d68a5;
+    justify-self: flex-end;
+    margin-right: 30px;
+}
+
+#lens:hover {
+    cursor: pointer;
+}
+
+/* div contenente i suggerimenti di ricerca sotto la barra */
+.select {
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 130px;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+    color: #5d68a5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* classe da aggiungere a select (div con i suggerimenti) quando non vi sono ricerche nella barra */
+.hidden {
+    display: none;
+}
+
+/* classe da aggiungere a select quando vi sono ricerche nella barra, in modo da far comparire  */
+.visible {
+    display: flex;
+}
+
+/* singolo suggerimento sotto la barra di ricerca, contenente i collegamenti alle città */
+.hint{
+    height: 50px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    line-height: 50px;
+    margin: 0px;
+}
+
+.hint a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #5d68a5;
+
+}
+
+.hint:hover{
+    background-color: #afb9f348;
+    cursor: pointer;
+}
+
+.hint:last-child:hover {
+    border-bottom-left-radius: 10px;
+}

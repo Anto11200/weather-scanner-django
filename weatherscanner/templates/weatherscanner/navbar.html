@@ -1,0 +1,16 @@
+{% load static %}
+<nav class="navbar">
+    <div class="img-div">
+        <a href="/weatherscanner"><img src="{% static 'images/ws_logo_nav.svg'%}" class="logo-nav"></a>
+    </div>
+    {%include 'weatherscanner/searchbar.html'%}
+    <a class="nav-item" href="/weatherscanner/accuracy-info"> Info affidabilità </a>
+    <div class="user">
+        {% if request.user.is_authenticated %}
+            <button id="logout-button">Logout</button>
+        {% else %}
+            <a class="user-item" href="/weatherscanner/login">Login</a>
+            <a class="user-item" href="/weatherscanner/register">Sign Up</a>
+        {% endif %}
+    </div>
+</nav>
