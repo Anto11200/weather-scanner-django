@@ -1,6 +1,5 @@
 from datetime import datetime, date, timedelta
-import locale
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from mongodb import Mongodb
 from ws_webapp.utilities import *
@@ -9,24 +8,23 @@ from django.contrib.auth import authenticate, login, logout, get_user_model
 from django.contrib.auth.models import User
 
 from django.core.exceptions import ValidationError
-from django.http import JsonResponse
+
+from django.conf import settings
 
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 
+import boto3
+from django.views.decorators.http import require_POST
+from django.contrib import messages
+from django.core.validators import validate_email
 
-
-
-
-# locale.setlocale(locale.LC_TIME, 'it_IT')
-
-# -----------------------CONNESSIONE AL RASPBERRY----------------------------
 
 
 def weatherscanner(request):
     return render(request, 'weatherscanner/home.html')
 
-
+# Views che permettono la registrazion e il login sul sito
 @api_view(['GET', 'POST'])
 def register(request):
     if request.method == 'POST':
@@ -40,7 +38,7 @@ def register(request):
 
         if password != password_confirm:
             return JsonResponse({'error': 'Le password non corrispondono!'}, status=400)
-
+            
         User = get_user_model()
         if User.objects.filter(username=username).exists():
             return JsonResponse({'error': 'Username già esistente'}, status=400)
@@ -88,9 +86,8 @@ def logout_view(request):
 class SearchAjaxView(APIView):
     def get(self, request, format=None):
         val = request.GET['search']
-        # mongodb = Mongodb("mongodb://root:admin@localhost:27017/")
-        # mongodb = Mongodb("mongodb://root:admin@siakoo.asuscomm.com:27017/?authMechanism=DEFAULT")
-        mongodb = Mongodb("mongodb://foo:mustbeeightchars@load-balancer-docdb-0183b5887cd86ae8.elb.eu-west-1.amazonaws.com:27017/?tls=true&tlsAllowInvalidHostnames=true&directConnection=true")
+        # mongodb = Mongodb("mongodb://root:admin@mongo-service.default.svc.cluster.local:27017/")
+        mongodb = Mongodb("mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false")
         db = mongodb.connect()
         citta = db['cities'].find({"name": {'$regex': '^' + val, '$options': 'i'}}, {'_id': 0})
         return JsonResponse({'citta': list(citta)})
@@ -115,8 +112,8 @@ class SearchedView(APIView):
         # -----------IERI ---------------
         # giorno = (datetime.now() - timedelta(1)).isoformat() + "T00:00:00"
         
-        mongodb = Mongodb("mongodb://foo:mustbeeightchars@load-balancer-docdb-0183b5887cd86ae8.elb.eu-west-1.amazonaws.com:27017/?tls=true&tlsAllowInvalidHostnames=true&directConnection=true")
-        # mongodb = Mongodb("mongodb://root:admin@siakoo.asuscomm.com:27017/?authMechanism=DEFAULT")
+        # mongodb = Mongodb("mongodb://root:admin@mongo-service.default.svc.cluster.local:27017/")
+        mongodb = Mongodb("mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false")
         db = mongodb.connect()
 
         # nella query vengono selezionati solamente i dati meteo correnti, 
@@ -144,8 +141,8 @@ class SearchedView(APIView):
 # View che permette di ottenere le previsioni di un servizio meteo per una città in base al giorno selezionato
 class ForecastView(APIView):
     def get(self, request, city, service, format=None):
-        mongodb = Mongodb("mongodb://root:admin@mongo-service.default.svc.cluster.local:27017/")
-        # mongodb = Mongodb("mongodb://root:admin@siakoo.asuscomm.com:27017/?authMechanism=DEFAULT")
+        # mongodb = Mongodb("mongodb://root:admin@mongo-service.default.svc.cluster.local:27017/")
+        mongodb = Mongodb("mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false")
         db = mongodb.connect()
         meteo = list(db[service].aggregate([{'$match': {"localita": city, "giorno": request.GET['data']}},
                                             {'$project': {'_id':0}},
@@ -168,8 +165,8 @@ class ForecastView(APIView):
 
 class AccuracyView(APIView):
     def get(self, request, format=None):
-        mongodb = Mongodb("mongodb://root:admin@localhost:27017/")
-        # mongodb = Mongodb("mongodb://root:admin@siakoo.asuscomm.com:27017/?authMechanism=DEFAULT")
+        # mongodb = Mongodb("mongodb://root:admin@mongo-service.default.svc.cluster.local:27017/")
+        mongodb = Mongodb("mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false")
         db = mongodb.connect()
         formula = request.GET['formula']
         b3meteo = db['accuracy'].find_one({"formula": formula, "servizio": "3bmeteo"}, {"_id":0})
@@ -184,6 +181,46 @@ class AccuracyView(APIView):
 
 
 # Permette di stampare la pagina con all'interno le info sui calcoli utilizzati per ottenere l'affidabilità di un servizio e il bias
-
 def accuracyInfo(request):
     return render(request, 'weatherscanner/accuracy_info.html')
+
+# ------------------------------------------------------
+
+# Logica di iscrizione al topic SNS
+@require_POST
+@api_view(['POST'])
+def subscribe_to_weather_notifications(request):
+    """
+    Gestisce la richiesta di iscrizione di un utente al topic SNS.
+    Accetta solo richieste POST.
+    """
+    email = request.data.get('email')
+
+    try:
+        validate_email(email) # Questa linea controlla il formato
+    except ValidationError:
+        # messages.error(request, "Inserire un indirizzo email valido.")
+        return JsonResponse({'error': 'Inserire un indirizzo email valido.'}, status=400)
+
+    try:
+        sns_client = boto3.client(
+            'sns',
+            region_name=settings.AWS_REGION,
+            # Boto3 gestirà automaticamente le credenziali
+        )
+
+        response = sns_client.subscribe(
+            TopicArn=settings.SNS_TOPIC_ARN,
+            Protocol='email',
+            Endpoint=email
+        )
+
+        # Restituisci una risposta JSON di successo
+        return JsonResponse({'success': "Grazie! Ti abbiamo inviato un'email di conferma. Clicca sul link nell'email per completare l'iscrizione.", 'redirect': '/'})
+
+    except Exception as e:
+        # Restituisci una risposta JSON di errore
+        print(f"Errore durante l'iscrizione di {email}: {e}") # Stampa l'errore per il debug sul server
+        return JsonResponse({'error': f"Si è verificato un errore durante l'iscrizione: {e}"}, status=500)
+
+    

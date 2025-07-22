@@ -1,7 +1,8 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 from rest_framework.authtoken.views import obtain_auth_token
 from .views import *
+from django.contrib import admin
 
 urlpatterns = [
     path('', views.weatherscanner, name=''),
@@ -23,5 +24,7 @@ urlpatterns = [
     # urls per l'autenticazione 
     path('register/', views.register, name='register'),
     path('login/', views.login_view, name='login'),
-    path('logout/', views.logout_view, name='logout')
+    path('logout/', views.logout_view, name='logout'),
+    
+    path('subscribe/', views.subscribe_to_weather_notifications, name='subscribe_to_weather_notifications'),
 ]

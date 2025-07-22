@@ -42,6 +42,48 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var email = document.getElementById('id_email_subscribe').value;
+
+        const csrftoken = getCookie('csrftoken'); 
+
+        $.ajax({
+            url: this.action,
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': csrftoken
+            },
+            data: JSON.stringify({
+                email: email,
+            }),
+            success: function(data) {
+                Swal.fire({
+                    title: data.success,
+                    icon: "success",
+                    confirmButtonText: "OK",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                    window.location.href = data.redirect;
+                    }
+                });
+            },
+            error: function(jqXHR) {
+                var errorData = jqXHR.responseJSON;
+                if (errorData.error) {
+                    Swal.fire({
+                        title: errorData.error,
+                        icon: "error"
+                    })
+                }
+            }
+        });
+    });
+});
+
 function getCookie(name) {
     let cookieValue = null;
     if (document.cookie && document.cookie !== '') {

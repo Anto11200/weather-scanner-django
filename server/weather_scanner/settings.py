@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-w289^$s#(p0#z_ly!v2_z+lt$@hwl97+&f6xqcpb)b)p)jkdr@
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "django.local"
+    "django.local",
+    "127.0.0.1",
+    "localhost"
 ]
 
 # Application definition
@@ -81,7 +83,7 @@ DATABASES = {
         'NAME': environ.get('DB_NAME', 'weatherdb'),
         'USER': environ.get('DB_USER', 'utente'),
         'PASSWORD': environ.get('DB_PASSWORD', 'passwd'),
-        'HOST': environ.get('DB_HOST', '192.168.0.107'),
+        'HOST': environ.get('DB_HOST', '127.0.0.1'),
         'PORT': environ.get('DB_PORT', '3306'),
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
@@ -131,3 +133,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# AWS SNS Settings
+AWS_REGION = 'us-east-1'
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:116695809482:weather-daily-notifications'

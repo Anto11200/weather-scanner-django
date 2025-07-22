@@ -1,3 +1,4 @@
+{% load static %}
 <div class="form-container">
     <h2>Login</h2>
     <form id="login-form" method="post" autocomplete="current-password">
@@ -18,8 +19,24 @@
         
         <button type="submit" class="btn btn-primary">Accedi</button>
     </form>
-    
     <p class="small-text">
         Non hai un account? <a href="{% url 'register' %}">Registrati</a>
     </p>
+</div>
+
+<hr/>
+
+<div class="form-container">
+    <h2>Iscriviti alle Notifiche Meteo 📧</h2>
+    <p>Ricevi aggiornamenti via email quando le previsioni meteo vengono aggiornate.</p>
+    <form id="subscribe-form" method="post" action="{% url 'subscribe_to_weather_notifications' %}">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_email_subscribe">La tua email</label>
+            <div class="input-container">
+                <input id="id_email_subscribe" type="email" name="email" placeholder="es. tua.email@esempio.com" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Iscriviti</button>
+    </form>
 </div>
