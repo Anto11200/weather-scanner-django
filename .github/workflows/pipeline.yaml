@@ -29,12 +29,16 @@ jobs:
       with:
         credentials_json: '${{ secrets.GH_SA_KEY }}'
 
+    - name: 'Set up Cloud SDK'
+      uses: 'google-github-actions/setup-gcloud@v2'
+      with:
+        project_id: 'weatherscanner-466411'
+
     - id: 'get-credentials'
       uses: 'google-github-actions/get-gke-credentials@v2'
       with:
         cluster_name: 'weather-scanner-gke'
-        location: 'weatherscanner-466411'
-        region: 'europe-west12'
+        location: 'europe-west12'
 
     # Login a Docker Hub
     - name: Login to Docker Hub
