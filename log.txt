@@ -1,0 +1,701 @@
+2025-07-23 10:36:25,018 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:36:58,022 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:37:03,814 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:37:36,785 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:38:25,224 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:38:36,028 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:40:20,559 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:50:03,818 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:50:06,548 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:50:23,482 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:51:45,868 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 10:54:40,193 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/urls.py changed, reloading.
+2025-07-23 10:54:41,932 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/urls.py changed, reloading.
+2025-07-23 11:09:37,175 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:10:00,516 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:10:04,124 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:10:05,690 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:11:00,353 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:11:02,013 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:13:16,989 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:13:19,875 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:13:21,957 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:13:33,482 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:13:36,921 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:13:58,295 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:14:53,332 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:15:23,669 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:15:48,840 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:16:07,470 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:16:11,068 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:16:12,978 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:20:49,515 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:20:50,083 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:20:50,546 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:20:51,220 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:20:52,116 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:20:53,833 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:20:57,184 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:20:57,200 - WARNING - Not Found: /weatherscanner/accuracy-info/sweetalert2.all.min.js
+2025-07-23 11:20:58,683 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:22:01,040 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:22:44,979 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:22:47,777 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:22:50,669 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:22:57,857 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:22:59,384 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:23:01,213 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:23:02,602 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:23:38,185 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:28:11,521 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:28:16,198 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:28:16,210 - WARNING - Not Found: /weatherscanner/accuracy-info/sweetalert2.all.min.js
+2025-07-23 11:28:17,623 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:32:09,592 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:32:43,914 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:33:01,353 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:33:03,776 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:33:04,527 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:33:06,084 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 11:33:14,182 - WARNING - Not Found: /weatherscanner/accuracy-info/sweetalert2.all.min.js
+2025-07-23 11:36:22,054 - INFO - /home/antonio/RepoGit/weather-scanner-django/ws_webapp/settings.py changed, reloading.
+2025-07-23 11:44:48,769 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 11:59:47,258 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 12:02:21,927 - INFO - /home/antonio/RepoGit/weather-scanner-django/ws_webapp/settings.py changed, reloading.
+2025-07-23 12:02:25,999 - INFO - /home/antonio/RepoGit/weather-scanner-django/ws_webapp/settings.py changed, reloading.
+2025-07-23 12:03:35,219 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 12:03:37,007 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 12:03:38,540 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 12:03:39,766 - WARNING - Not Found: /oauth2/authorize
+2025-07-23 12:03:39,796 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 12:03:40,082 - WARNING - Not Found: /favicon.ico
+2025-07-23 12:06:11,583 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 12:06:11,589 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 12:06:12,806 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 12:06:14,558 - WARNING - Not Found: /oauth2/authorize
+2025-07-23 12:06:14,589 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 12:06:14,877 - WARNING - Not Found: /favicon.ico
+2025-07-23 12:08:40,794 - INFO - /home/antonio/RepoGit/weather-scanner-django/manage.py changed, reloading.
+2025-07-23 14:12:58,584 - WARNING - Not Found: /oauth2/authorize
+2025-07-23 14:12:58,857 - WARNING - Not Found: /favicon.ico
+2025-07-23 14:14:39,725 - INFO - /home/antonio/RepoGit/weather-scanner-django/ws_webapp/settings.py changed, reloading.
+2025-07-23 14:15:48,385 - INFO - /home/antonio/RepoGit/weather-scanner-django/ws_webapp/settings.py changed, reloading.
+2025-07-23 14:24:32,159 - INFO - /home/antonio/RepoGit/weather-scanner-django/ws_webapp/settings.py changed, reloading.
+2025-07-23 14:29:29,372 - INFO - Utente Django creato per lauroantonio01@gmail.com
+2025-07-23 14:29:34,785 - WARNING - Not Found: /weatherscanner/accuracy-info/sweetalert2.all.min.js
+2025-07-23 14:29:38,274 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:38,361 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:38,535 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:38,656 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:38,720 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:38,775 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:38,863 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:40,269 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:42,495 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:43,784 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:43,974 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:29:44,693 - ERROR - Internal Server Error: /weatherscanner/search/
+Traceback (most recent call last):
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py", line 111, in get
+    db = mongodb.connect()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/mongodb.py", line 20, in connect
+    client = MongoClient(self.conn_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 529, in parse_uri
+    options.update(split_options(opts, validate, warn, normalize))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 363, in split_options
+    options = cast(_CaseInsensitiveDictionary, validate_options(options, warn))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/uri_parser.py", line 321, in validate_options
+    return get_validated_options(opts, warn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 860, in get_validated_options
+    value = validator(opt, value)  # noqa: PLW2901
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/antonio/RepoGit/weather-scanner-django/.venv/lib/python3.12/site-packages/pymongo/common.py", line 224, in validate_readable
+    open(value).close()
+    ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'global-bundle.pem'
+2025-07-23 14:30:11,196 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 14:32:16,583 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 14:45:52,428 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 14:50:56,880 - WARNING - Not Found: /favicon.ico
+2025-07-23 14:51:57,201 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 14:52:51,835 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 14:53:54,276 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 14:55:54,505 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 14:56:07,601 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 14:56:14,606 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 15:00:34,220 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 15:01:07,022 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 15:07:40,941 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 15:12:11,517 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/urls.py changed, reloading.
+2025-07-23 15:17:07,778 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 15:18:44,983 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 15:27:23,828 - WARNING - Not Found: /favicon.ico
+2025-07-23 15:27:41,741 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 15:29:21,318 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 15:29:58,750 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 15:31:08,488 - INFO - /home/antonio/RepoGit/weather-scanner-django/ws_webapp/settings.py changed, reloading.
+2025-07-23 15:32:15,174 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 15:32:33,251 - INFO - /home/antonio/RepoGit/weather-scanner-django/weatherscanner/views.py changed, reloading.
+2025-07-23 15:32:52,917 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 15:32:58,988 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 15:33:16,449 - INFO - Utente Django esistente per lauroantonio01@gmail.com
+2025-07-23 15:33:20,857 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-23 15:33:21,408 - WARNING - Not Found: /.well-known/appspecific/com.chrome.devtools.json

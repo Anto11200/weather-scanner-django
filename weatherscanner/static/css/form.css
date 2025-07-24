@@ -17,7 +17,8 @@
 
 .form-container h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .form-group {
@@ -69,14 +70,23 @@ label {
 }
 
 .small-text {
+    margin: 0;
     font-size: 13px;
-    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#update_email {
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* Stile del separatore bottoni per il login */
 .separator {
     text-align: center;
-    margin: 15px 0;
+    margin-top: 15px;
     font-size: 0.9em;
     color: #888;
     position: relative;
@@ -110,26 +120,24 @@ label {
 .google-login-button {
     display: inline-flex; /* Per allineare icona e testo */
     align-items: center; /* Centra verticalmente gli elementi */
-    background-color: #4285F4; /* Colore blu di Google */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+    color: black;
     font-size: 16px;
-    font-weight: bold;
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .google-login-button:hover {
-    background-color: #357ae8; /* Un blu leggermente più scuro al passaggio del mouse */
+    background-color: rgb(236, 236, 236); /* Un blu leggermente più scuro al passaggio del mouse */
 }
 
 .google-logo {
     width: 24px; /* Dimensione del logo */
     height: 24px;
-    margin-right: 10px; /* Spazio tra logo e testo */
-    background-color: white; /* Sfondo bianco per il logo */
+    margin-right: 15px; /* Spazio tra logo e testo */
     padding: 2px;
     border-radius: 2px;
 }

@@ -26,5 +26,9 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),
     path('logout/', views.logout_view, name='logout'),
     
+    # urls per auth con Cognito
+    path('cognito/google/callback/', views.cognito_google_callback, name='cognito_google_callback'),
+    path('logout/', views.logout_view, name='logout'),
+    
     path('subscribe/', views.subscribe_to_weather_notifications, name='subscribe_to_weather_notifications'),
 ]

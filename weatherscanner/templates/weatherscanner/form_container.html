@@ -22,13 +22,24 @@
     <p class="small-text">
         Non hai un account? <a href="{% url 'register' %}">Registrati</a>
     </p>
+
+    <div class="separator">
+        <span>oppure</span>
+    </div>
+
+    <div class="social-login-options">
+        <a href="{{ COGNITO_DOMAIN }}/oauth2/authorize?response_type=code&client_id={{ COGNITO_APP_CLIENT_ID }}&redirect_uri={{ COGNITO_REDIRECT_URI }}&identity_provider=Google&scope=openid%20profile%20email&prompt=select_account" class="google-login-button">
+            <img src="{% static 'images/google_logo.png' %}" alt="Google logo" class="google-logo">
+            Accedi con Google
+        </a>
+    </div>
 </div>
 
 <hr/>
 
 <div class="form-container">
     <h2>Iscriviti alle Notifiche Meteo 📧</h2>
-    <p>Ricevi aggiornamenti via email quando le previsioni meteo vengono aggiornate.</p>
+    <p id="update_email">Ricevi aggiornamenti via email quando le previsioni meteo vengono aggiornate!</p>
     <form id="subscribe-form" method="post" action="{% url 'subscribe_to_weather_notifications' %}">
         {% csrf_token %}
         <div class="form-group">

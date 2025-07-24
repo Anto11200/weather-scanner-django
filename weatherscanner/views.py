@@ -14,11 +14,23 @@ from django.conf import settings
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 
+import logging
+import requests # Per fare chiamate HTTP al token endpoint di Cognito
+import jwt # Per decodificare il JWT (ID Token)
 import boto3
+
 from django.views.decorators.http import require_POST
-from django.contrib import messages
 from django.core.validators import validate_email
 
+# ---------- CONFIGURAZIONE LOGGING ----------
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("log.txt"),
+        logging.StreamHandler()
+    ]
+)
 
 
 def weatherscanner(request):
@@ -42,6 +54,9 @@ def register(request):
         User = get_user_model()
         if User.objects.filter(username=username).exists():
             return JsonResponse({'error': 'Username già esistente'}, status=400)
+        
+        if User.objects.filter(email=email).exists():
+            return JsonResponse({'error': 'Un utente è già registrato con quest\'email.'}, status=400)
 
         try:
             User.objects.create_user(username, email, password)
@@ -68,19 +83,39 @@ def login_view(request):
         else:
             return JsonResponse({'error': 'Credenziali invalide'}, status=400)
     else:
-        return render(request, 'weatherscanner/login.html')
+        context = {
+            'COGNITO_DOMAIN': settings.COGNITO_DOMAIN,
+            'COGNITO_APP_CLIENT_ID': settings.COGNITO_APP_CLIENT_ID,
+            'COGNITO_REDIRECT_URI': settings.COGNITO_REDIRECT_URI,
+        }
+        return render(request, 'weatherscanner/login.html', context)
 
+
+# @api_view(['POST'])
+# def logout_view(request):
+#     if not request.user.is_authenticated:
+#         return JsonResponse({'error': 'Nessun utente connesso'}, status=400)
+
+#     logout(request)
+#     return JsonResponse({'success': 'Disconnessione avvenuta', 'redirect': '/login/'})
 
 @api_view(['POST'])
 def logout_view(request):
     if not request.user.is_authenticated:
         return JsonResponse({'error': 'Nessun utente connesso'}, status=400)
 
+    # Esegui il logout da Django
     logout(request)
-    return JsonResponse({'success': 'Disconnessione avvenuta', 'redirect': '/login/'})
+    cognito_logout_url = (
+        f"{settings.COGNITO_DOMAIN}/logout?"
+        f"client_id={settings.COGNITO_APP_CLIENT_ID}&"
+        f"logout_uri={settings.LOGOUT_REDIRECT_URI}"
+    )
+    
+    # Reindirizza l'utente all'endpoint di logout di Cognito
+    return JsonResponse({'success': 'Disconnessione avvenuta', 'redirect': cognito_logout_url})
 
 # ------------------------------------------------------
-
 
 # View che permette di ottenere la lista delle possibili città di cui è possibile visualizzare le condizioni meteo
 class SearchAjaxView(APIView):
@@ -179,10 +214,89 @@ class AccuracyView(APIView):
 
 # ------------------------------------------------------
 
-
 # Permette di stampare la pagina con all'interno le info sui calcoli utilizzati per ottenere l'affidabilità di un servizio e il bias
 def accuracyInfo(request):
     return render(request, 'weatherscanner/accuracy_info.html')
+
+# ------------------------------------------------------
+
+def cognito_google_callback(request):
+    """
+    Gestisce il callback da AWS Cognito dopo l'autenticazione con Google.
+    Scambia il codice di autorizzazione con i token di sessione.
+    Crea o autentica l'utente in Django.
+    """
+    code = request.GET.get('code')
+    if not code:
+        # Errore, il codice di autorizzazione non è stato ricevuto
+        return JsonResponse({'error': 'Il codice di autorizzazione non è stato ricevuto!', 'redirect': '/login/'})
+        # Reindirizza alla pagina di login con un messaggio di errore
+
+    try:
+        # 1. Scambia il codice di autorizzazione di Cognito con i token
+        token_endpoint = settings.COGNITO_TOKEN_URL
+        client_id = settings.COGNITO_APP_CLIENT_ID
+        redirect_uri = settings.COGNITO_REDIRECT_URI
+
+        headers = {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+        data = {
+            'grant_type': 'authorization_code',
+            'client_id': client_id,
+            'code': code,
+            'redirect_uri': redirect_uri
+        }
+
+        response = requests.post(token_endpoint, headers=headers, data=data)
+        response.raise_for_status() # Solleva un'eccezione per errori HTTP (4xx o 5xx)
+        tokens = response.json()
+
+        id_token = tokens.get('id_token')
+        access_token = tokens.get('access_token')
+        refresh_token = tokens.get('refresh_token')
+
+        if not id_token:
+            logging.error("Errore: ID Token non ricevuto da Cognito.")
+            return redirect('/login/')
+
+        # 2. Decodifica e verifica l'ID Token (contiene le info utente)
+        # Per una verifica robusta, dovresti scaricare le chiavi JWKS di Cognito
+        decoded_id_token = jwt.decode(id_token, options={"verify_signature": False})
+
+        email = decoded_id_token.get('email')
+        cognito_username = decoded_id_token.get('cognito:username') # O 'sub' o 'username' a seconda del mapping
+
+        if not email:
+            logging.error("Email non trovata nell'ID Token.")
+            return redirect('/login/')
+
+        # 3. Trova o crea l'utente in Django e loggalo
+        User = get_user_model()
+        user, created = User.objects.get_or_create(email=email)
+        
+        # Se l'utente è stato appena creato, imposta uno username e una password (non usata per login Cognito)
+        if created:
+            user.username = cognito_username or email # Usa lo username di Cognito
+            user.set_unusable_password() # Non usiamo una password per gli utenti Cognito
+            user.save()
+            logging.info(f"Utente Django creato per {email}")
+        else:
+            logging.info(f"Utente Django esistente per {email}")
+
+        # Logga l'utente in Django
+        login(request, user)
+
+        # Reindirizza l'utente alla tua homepage o dashboard
+        return redirect('/') # O qualsiasi URL di destinazione post-login
+
+    except requests.exceptions.HTTPError as e:
+        print(f"HTTP Error durante lo scambio di token: {e.response.text}")
+        return redirect('/login/') # Errore HTTP da Cognito
+    except Exception as e:
+        print(f"Errore inaspettato durante l'autenticazione Cognito: {e}")
+        return redirect('/login/') # Gestisci altri errori
+
 
 # ------------------------------------------------------
 
@@ -219,8 +333,6 @@ def subscribe_to_weather_notifications(request):
         return JsonResponse({'success': "Grazie! Ti abbiamo inviato un'email di conferma. Clicca sul link nell'email per completare l'iscrizione.", 'redirect': '/'})
 
     except Exception as e:
-        # Restituisci una risposta JSON di errore
-        print(f"Errore durante l'iscrizione di {email}: {e}") # Stampa l'errore per il debug sul server
         return JsonResponse({'error': f"Si è verificato un errore durante l'iscrizione: {e}"}, status=500)
 
     

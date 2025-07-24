@@ -138,6 +138,26 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# -------------------------------------------------
+
 # AWS SNS Settings
-AWS_REGION = 'us-east-1'
-SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:116695809482:weather-daily-notifications"
+AWS_REGION = environ.get('AWS_REGION', 'us-east-1')
+SNS_TOPIC_ARN = environ.get('SNS_TOPIC_ARN', 'arn:aws:sns:us-east-1:116695809482:weather-daily-notifications')
+
+# -------------------------------------------------
+
+# AWS Cognito Settings
+COGNITO_USER_POOL_ID = environ.get('COGNITO_USER_POOL_ID', 'us-east-1_efgqJvIlr')
+COGNITO_APP_CLIENT_ID = environ.get('COGNITO_APP_CLIENT_ID', '4e74qql1vri350oeajtptds6p7')
+COGNITO_DOMAIN = environ.get('COGNITO_DOMAIN', 'https://weather-scanner-app.auth.us-east-1.amazoncognito.com')
+
+# URL di callback nella tua app Django. Deve corrispondere a quello in Terraform.
+COGNITO_REDIRECT_URI = environ.get('COGNITO_REDIRECT_URI', 'http://localhost:8000/cognito/google/callback/')
+LOGOUT_REDIRECT_URI = environ.get('LOGOUT_REDIRECT_URI', 'http://localhost:8000/login/')
+
+# Nome dell'identity provider (deve corrispondere a "Google" come definito in Terraform)
+COGNITO_IDENTITY_PROVIDER = environ.get('COGNITO_IDENTITY_PROVIDER', 'Google')
+
+# Endpoint per lo scambio di token
+COGNITO_TOKEN_URL = f'{COGNITO_DOMAIN}/oauth2/token'
+COGNITO_USERINFO_URL = f'{COGNITO_DOMAIN}/oauth2/userInfo'
