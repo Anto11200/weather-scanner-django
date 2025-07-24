@@ -39,6 +39,8 @@ jobs:
       with:
         cluster_name: 'weather-scanner-gke'
         location: 'europe-west12'
+        # context_name: gke_weatherscanner-466411_europe-west12_weather-scanner-gke
+        use_internal_ip: true
 
     # Login a Docker Hub
     - name: Login to Docker Hub
@@ -54,7 +56,7 @@ jobs:
 
     - name: Get GKE credentials
       run: |-
-        kubectl config set-cluster gke_weatherscanner-466411_europe-west12_weather-scanner-gke --server=https://127.0.0.1:8443 --tls-server-name=10.0.1.2
+        kubectl config set-cluster weather-scanner-gke --server=https://127.0.0.1:8443 --tls-server-name=10.0.1.2
 
         gcloud compute ssh --zone "europe-west12-b" "gke-bastion-host" --tunnel-through-iap --project "weatherscanner-466411" -- -fNL 8443:10.0.1.2:443
 
