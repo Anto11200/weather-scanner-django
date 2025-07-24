@@ -23,15 +23,16 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    # - name: Authenticate to Google Cloud
-    #   id: auth
-    #   uses: 'google-github-actions/auth@v2'
-    #   with:
-    #     workload_identity_provider: 'projects/NUMERO_PROGETTO/locations/global/workloadIdentityPools/NOME_POOL/providers/NOME_PROVIDER' # Sostituisci con il tuo WIF Provider
-    #     service_account: 'NOME_SA@TUO_PROGETTO_ID.iam.gserviceaccount.com' # Sostituisci con il tuo Service Account
+    - name: Authenticate to Google Cloud
+      id: auth
+      uses: 'google-github-actions/auth@v2'
+      with:
+        credentials_json: '${{ secrets.GH_SA_KEY }}'
 
-    # - name: Set up Cloithud SDK
-    #   uses: 'google-gub-actions/setup-gcloud@v2'
+    - name: 'Set up Cloud SDK'
+      uses: 'google-github-actions/setup-gcloud@v1'
+      with:
+        project_id: 'weatherscanner-466411'
 
     # Login a Docker Hub
     - name: Login to Docker Hub
@@ -45,10 +46,17 @@ jobs:
         docker build -t "antoniolauro/webapp:${{ github.sha }}" -t "antoniolauro/webapp:latest" . 
         docker push -a "antoniolauro/webapp"
 
-    # - name: Get GKE credentials
-    #   run: gcloud container clusters get-credentials ${{ env.GKE_CLUSTER }} --zone ${{ env.GKE_ZONE }}
+    - name: Get GKE credentials
+      run: |-
+        kubectl config set-cluster gke_weatherscanner-466411_europe-west12_weather-scanner-gke --server=https://127.0.0.1:8443 --tls-server-name=10.0.1.2
 
-    # - name: Deploy to GKE
-    #   run: |-
-    #     kubectl set image deployment/${{ env.DEPLOYMENT_NAME }} ${{ env.IMAGE }}=${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.IMAGE }}:${{ github.sha }}
-    #     kubectl rollout status deployment/${{ env.DEPLOYMENT_NAME }}
+        gcloud container clusters get-credentials ${{ env.GKE_CLUSTER }} --zone ${{ env.GKE_ZONE }}
+
+        gcloud compute ssh --zone "europe-west12-b" "gke-bastion-host" --tunnel-through-iap --project "weatherscanner-466411" -- -fNL 8443:10.0.1.2:443
+
+    - name: Deploy to GKE
+      run: |-
+        # deployment viene eliminato solo se esiste
+        kubectl get deployment django &> /dev/null && kubectl get deploy/django
+        kubectl apply -f ./manifests
+        kubectl rollout status deployment/django
