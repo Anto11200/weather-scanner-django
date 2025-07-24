@@ -43,7 +43,7 @@ jobs:
     - name: Build and Push Docker Image
       run: |-
         docker build -t "antoniolauro/webapp:${{ github.sha }}" -t "antoniolauro/webapp:latest" . 
-        docker push -a "antoniolauro/webapp:${{ github.sha }}"
+        docker push -a "antoniolauro/webapp"
 
     # - name: Get GKE credentials
     #   run: gcloud container clusters get-credentials ${{ env.GKE_CLUSTER }} --zone ${{ env.GKE_ZONE }}
