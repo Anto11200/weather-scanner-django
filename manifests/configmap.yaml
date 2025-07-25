@@ -6,7 +6,7 @@ metadata:
     app: django
 data: 
   DB_NAME : weatherdb
-  DB_USER : utente
+  DB_USER : admin
   DB_HOST : "rds-instance.cpkfci27pmjq.us-east-1.rds.amazonaws.com"
   DB_PORT : "3306"
   AWS_REGION : us-east-1
