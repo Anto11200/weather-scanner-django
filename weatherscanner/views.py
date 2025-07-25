@@ -21,6 +21,7 @@ import boto3
 
 from django.views.decorators.http import require_POST
 from django.core.validators import validate_email
+import os
 
 # ---------- CONFIGURAZIONE LOGGING ----------
 logging.basicConfig(
@@ -122,7 +123,7 @@ class SearchAjaxView(APIView):
     def get(self, request, format=None):
         val = request.GET['search']
         # mongodb = Mongodb("mongodb://root:admin@mongo-service.default.svc.cluster.local:27017/")
-        mongodb = Mongodb("mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false")
+        mongodb = Mongodb(os.environ.get("MONGO_DB_URI", ""mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false""))
         db = mongodb.connect()
         citta = db['cities'].find({"name": {'$regex': '^' + val, '$options': 'i'}}, {'_id': 0})
         return JsonResponse({'citta': list(citta)})
@@ -148,7 +149,7 @@ class SearchedView(APIView):
         # giorno = (datetime.now() - timedelta(1)).isoformat() + "T00:00:00"
         
         # mongodb = Mongodb("mongodb://root:admin@mongo-service.default.svc.cluster.local:27017/")
-        mongodb = Mongodb("mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false")
+        mongodb = Mongodb(os.environ.get("MONGO_DB_URI", ""mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false""))
         db = mongodb.connect()
 
         # nella query vengono selezionati solamente i dati meteo correnti, 
@@ -177,7 +178,7 @@ class SearchedView(APIView):
 class ForecastView(APIView):
     def get(self, request, city, service, format=None):
         # mongodb = Mongodb("mongodb://root:admin@mongo-service.default.svc.cluster.local:27017/")
-        mongodb = Mongodb("mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false")
+        mongodb = Mongodb(os.environ.get("MONGO_DB_URI", ""mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false""))
         db = mongodb.connect()
         meteo = list(db[service].aggregate([{'$match': {"localita": city, "giorno": request.GET['data']}},
                                             {'$project': {'_id':0}},
@@ -201,7 +202,7 @@ class ForecastView(APIView):
 class AccuracyView(APIView):
     def get(self, request, format=None):
         # mongodb = Mongodb("mongodb://root:admin@mongo-service.default.svc.cluster.local:27017/")
-        mongodb = Mongodb("mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false")
+        mongodb = Mongodb(os.environ.get("MONGO_DB_URI", ""mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false""))
         db = mongodb.connect()
         formula = request.GET['formula']
         b3meteo = db['accuracy'].find_one({"formula": formula, "servizio": "3bmeteo"}, {"_id":0})
