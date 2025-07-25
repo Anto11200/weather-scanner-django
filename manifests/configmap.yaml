@@ -7,7 +7,7 @@ metadata:
 data: 
   DB_NAME : weatherdb
   DB_USER : utente
-  DB_HOST : "rds-instance.cpkfci27pmjq.us-east-1.rds.amazonaws.com:3306"
+  DB_HOST : "rds-instance.cpkfci27pmjq.us-east-1.rds.amazonaws.com"
   DB_PORT : "3306"
   AWS_REGION : us-east-1
   SNS_TOPIC_ARN : 'arn:aws:sns:us-east-1:116695809482:weather-daily-notifications'
