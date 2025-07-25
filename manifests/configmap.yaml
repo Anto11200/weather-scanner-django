@@ -2,8 +2,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: configmap-django
-labels:
-  app: django
+  labels:
+    app: django
 data: 
   DB_NAME : weatherdb
   DB_USER : utente
