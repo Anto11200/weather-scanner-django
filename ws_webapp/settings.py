@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': environ.get('DB_NAME', 'weatherdb'),
         'USER': environ.get('DB_USER', 'utente'),
         'PASSWORD': environ.get('DB_PASSWORD', 'passwd'),
-        'HOST': environ.get('DB_HOST', '127.0.0.1'),
+        'HOST': environ.get('DB_HOST', 'rds-instance.cpkfci27pmjq.us-east-1.rds.amazonaws.com'),
         'PORT': environ.get('DB_PORT', '3306'),
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
@@ -152,8 +152,8 @@ COGNITO_APP_CLIENT_ID = environ.get('COGNITO_APP_CLIENT_ID', '4e74qql1vri350oeaj
 COGNITO_DOMAIN = environ.get('COGNITO_DOMAIN', 'https://weather-scanner-app.auth.us-east-1.amazoncognito.com')
 
 # URL di callback nella tua app Django. Deve corrispondere a quello in Terraform.
-COGNITO_REDIRECT_URI = environ.get('COGNITO_REDIRECT_URI', 'http://localhost:8000/cognito/google/callback/')
-LOGOUT_REDIRECT_URI = environ.get('LOGOUT_REDIRECT_URI', 'http://localhost:8000/login/')
+COGNITO_REDIRECT_URI = environ.get('COGNITO_REDIRECT_URI', 'http://34.117.38.205.nip.io/cognito/google/callback/')
+LOGOUT_REDIRECT_URI = environ.get('LOGOUT_REDIRECT_URI', 'http://34.117.38.205.nip.io/login/')
 
 # Nome dell'identity provider (deve corrispondere a "Google" come definito in Terraform)
 COGNITO_IDENTITY_PROVIDER = environ.get('COGNITO_IDENTITY_PROVIDER', 'Google')
