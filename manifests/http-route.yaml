@@ -7,7 +7,7 @@ spec:
   - kind: Gateway
     name: external-http-gateway
   hostnames:
-  - "34.117.38.205.nip.io"
+  - "34.128.177.59.nip.io"
   rules:
   - matches:
     - path:
