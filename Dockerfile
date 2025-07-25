@@ -31,14 +31,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 # Imposta la directory di lavoro e il proprietario
 WORKDIR /app
 
-# Cambia il proprietario dei file per il nuovo utente
-RUN chown -R django:django /app
-
 # Espone la porta su cui l'applicazione sarà in ascolto
 EXPOSE 8000
-
-# Passa all'utente django
-USER django
 
 COPY . .
 
