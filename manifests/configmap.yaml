@@ -17,3 +17,5 @@ data:
   COGNITO_REDIRECT_URI : "http://34.117.38.205.nip.io/cognito/google/callback/"
   LOGOUT_REDIRECT_URI : "http://34.117.38.205.nip.io/login/"
   COGNITO_IDENTITY_PROVIDER : "Google"
+
+#
