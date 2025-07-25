@@ -17,3 +17,4 @@ data:
   COGNITO_REDIRECT_URI : "https://34.128.177.59.nip.io/cognito/google/callback/"
   LOGOUT_REDIRECT_URI : "https://34.128.177.59.nip.io/login/"
   COGNITO_IDENTITY_PROVIDER : "Google"
+  MONGO_DB_URI : "mongodb://foo:mustbeeightchars@weather-scanner-nlb-41dfd916e651d512.elb.eu-west-1.amazonaws.com:27017/?tls=true&retryWrites=false&tlsInsecure=true&directConnection=true"
