@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-name: configmap-django
+  name: configmap-django
 labels:
   app: django
 data: 
