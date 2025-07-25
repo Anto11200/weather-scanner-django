@@ -8,7 +8,7 @@ data:
   DB_NAME : weatherdb
   DB_USER : utente
   # DB_HOST : 192.168.0.107
-  DB_HOST : mysql.default.svc.cluster.local
+  DB_HOST : "rds-instance.cpkfci27pmjq.us-east-1.rds.amazonaws.com"
   DB_PORT : "3306"
 
   AWS_REGION : us-east-1
@@ -17,6 +17,6 @@ data:
   COGNITO_USER_POOL_ID : "us-east-1_efgqJvIlr"
   COGNITO_APP_CLIENT_ID : "4e74qql1vri350oeajtptds6p7"
   COGNITO_DOMAIN : "https://weather-scanner-app.auth.us-east-1.amazoncognito.com"
-  COGNITO_REDIRECT_URI : "http://localhost:8000/cognito/google/callback/"
-  LOGOUT_REDIRECT_URI : "http://localhost:8000/login/"
+  COGNITO_REDIRECT_URI : "http://34.117.38.205.nip.io/cognito/google/callback/"
+  LOGOUT_REDIRECT_URI : "http://34.117.38.205.nip.io/login/"
   COGNITO_IDENTITY_PROVIDER : "Google"
