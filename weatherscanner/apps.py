@@ -11,7 +11,7 @@ class WeatherscannerConfig(AppConfig):
     
     def ready(self):
         # MONGO_URI = "mongodb://root:admin@mongo-service.default.svc.cluster.local:27017/"
-        MONGO_URI = os.environ.get("MONGO_DB_URI", ""mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false"")
+        MONGO_URI = os.environ.get("MONGO_DB_URI", "mongodb://foo:mustbeeightchars@mydocdb-cluster-instance.cb082oguy914.eu-west-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false")
         DB_NAME = "weatherscanner"
         
         try:
