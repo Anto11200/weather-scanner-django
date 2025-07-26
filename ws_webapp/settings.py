@@ -31,6 +31,10 @@ ALLOWED_HOSTS = ['*']
 
 CORS_ALLOW_ALL_ORIGINS=True
 
+CSRF_TRUSTED_ORIGINS = [
+    environ.get("DOMAIN", "https://34.128.177.59.nip.io")
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

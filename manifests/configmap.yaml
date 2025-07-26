@@ -16,5 +16,6 @@ data:
   COGNITO_DOMAIN : "https://weather-scanner-app.auth.us-east-1.amazoncognito.com"
   COGNITO_REDIRECT_URI : "https://34.128.177.59.nip.io/cognito/google/callback/"
   LOGOUT_REDIRECT_URI : "https://34.128.177.59.nip.io/login/"
+  DOMAIN : "https://34.128.177.59.nip.io"
   COGNITO_IDENTITY_PROVIDER : "Google"
   MONGO_DB_URI : "mongodb://foo:mustbeeightchars@weather-scanner-nlb-ad65dd6f7883376f.elb.eu-west-1.amazonaws.com:27017/weather_scanner?tls=true&retryWrites=false&tlsInsecure=true&directConnection=true"
