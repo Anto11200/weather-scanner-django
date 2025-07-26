@@ -6,6 +6,7 @@
     {%include 'weatherscanner/searchbar.html'%}
     <a class="nav-item" href="/weatherscanner/accuracy-info"> Info affidabilità </a>
     <div class="user">
+        {% csrf_token %}
         {% if request.user.is_authenticated %}
             <button id="logout-button">Logout</button>
         {% else %}
