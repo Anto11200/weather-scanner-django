@@ -18,7 +18,7 @@ spec:
         imagePullPolicy: Always
         volumeMounts:
           - name: secret-volume
-            mountPath: "/.aws/credentials"
+            mountPath: "/.aws"
             readOnly: true
         ports:
         - containerPort: 8000
