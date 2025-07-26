@@ -16,6 +16,10 @@ spec:
       - name: django
         image: antoniolauro/webapp:latest
         imagePullPolicy: Always
+        volumeMounts:
+          - name: secret-volume
+            mountPath: "/.aws/credentials"
+            readOnly: true
         ports:
         - containerPort: 8000
         env:
@@ -27,3 +31,7 @@ spec:
         envFrom:
           - configMapRef:
               name: configmap-django
+      volumes:
+        - name: secret-volume
+          secret:
+            secretName: aws-credentials
