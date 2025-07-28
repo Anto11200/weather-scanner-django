@@ -142,7 +142,7 @@ class SearchedView(APIView):
             data = date.today() + timedelta(days=i)
             dates.append({'data': data.strftime("%Y-%m-%d"), 'string': data.strftime("%d %b"), 'day': data.strftime("%a") })
 
-        # ---------OGGI ----- CONNESSIONE RASPBERRY
+        # ---------OGGI -----
         giorno = date.today().isoformat() + "T00:00:00"
 
         # -----------IERI ---------------
