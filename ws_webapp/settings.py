@@ -145,7 +145,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AWS_REGION = environ.get('AWS_REGION', 'us-east-1')
 SNS_TOPIC_ARN = environ.get('SNS_TOPIC_ARN', 'arn:aws:sns:us-east-1:116695809482:weather-daily-notifications')
 
-# -------------------------------------------------
+# ------------------------------------------------
 
 # AWS Cognito Settings
 COGNITO_USER_POOL_ID = environ.get('COGNITO_USER_POOL_ID', 'us-east-1_efgqJvIlr')
