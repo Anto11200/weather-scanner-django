@@ -18,6 +18,8 @@ import logging
 import requests # Per fare chiamate HTTP al token endpoint di Cognito
 import jwt # Per decodificare il JWT (ID Token)
 import boto3
+from urllib.parse import quote_plus
+import secrets
 
 from django.views.decorators.http import require_POST
 from django.core.validators import validate_email
@@ -100,23 +102,59 @@ def login_view(request):
 #     logout(request)
 #     return JsonResponse({'success': 'Disconnessione avvenuta', 'redirect': '/login/'})
 
+# @api_view(['GET'])
+# def logout_view(request):
+#     if not request.user.is_authenticated:
+#         return JsonResponse({'error': 'Nessun utente connesso'}, status=400)
+
+#     # Esegui il logout da Django
+#     logout(request)
+#     cognito_logout_url = (
+#         f"{settings.COGNITO_DOMAIN}/logout?"
+#         "response_type=code&"
+#         f"client_id={settings.COGNITO_APP_CLIENT_ID}&"
+#         f"logout_uri={settings.LOGOUT_REDIRECT_URI}"
+#     )
+    
+#     # Reindirizza l'utente all'endpoint di logout di Cognito
+#     return JsonResponse({'success': 'Disconnessione avvenuta', 'redirect': cognito_logout_url})
+
+
 @api_view(['GET'])
 def logout_view(request):
     if not request.user.is_authenticated:
         return JsonResponse({'error': 'Nessun utente connesso'}, status=400)
 
-    # Esegui il logout da Django
+    # Esegui il logout da Django (distrugge la sessione locale)
     logout(request)
-    cognito_logout_url = (
+
+    state_value = secrets.token_urlsafe(32)
+    request.session['cognito_state'] = state_value # Salva in sessione Django per la validazione successiva
+
+    nonce_value = secrets.token_urlsafe(32)
+    request.session['cognito_nonce'] = nonce_value # Salva in sessione Django
+
+    scopes = "openid profile email aws.cognito.signin.user.admin"
+    encoded_scopes = quote_plus(scopes) # Applica URL encoding
+
+    cognito_logout_and_new_login_url = (
         f"{settings.COGNITO_DOMAIN}/logout?"
-        "response_type=code&"
+        f"response_type=code&" # Richiedi un codice di autorizzazione
         f"client_id={settings.COGNITO_APP_CLIENT_ID}&"
-        f"logout_uri={settings.LOGOUT_REDIRECT_URI}"
+        f"redirect_uri={settings.COGNITO_LOGIN_REDIRECT_URI}&" # L'URL di callback per il login
+        f"state={state_value}&" # Il parametro state generato
+        f"nonce={nonce_value}&" # Il parametro nonce generato
+        f"scope={encoded_scopes}" # Gli scope richiesti
     )
     
-    # Reindirizza l'utente all'endpoint di logout di Cognito
-    return JsonResponse({'success': 'Disconnessione avvenuta', 'redirect': cognito_logout_url})
-
+    # Restituisci l'URL al frontend.
+    # Il frontend (es. JavaScript) dovrà poi reindirizzare il browser a questa URL.
+    return JsonResponse(
+        {
+            'success': 'Disconnessione avvenuta, reindirizzamento per un nuovo accesso', 
+            'redirect': cognito_logout_and_new_login_url
+        }
+    )
 # ------------------------------------------------------
 
 # View che permette di ottenere la lista delle possibili città di cui è possibile visualizzare le condizioni meteo
