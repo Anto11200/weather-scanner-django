@@ -11,12 +11,12 @@ data:
   DB_PORT : "3306"
   AWS_REGION : us-east-1
   SNS_TOPIC_ARN : 'arn:aws:sns:us-east-1:116695809482:weather-daily-notifications'
-  COGNITO_USER_POOL_ID : "us-east-1_BYvCGTsiL"
-  COGNITO_APP_CLIENT_ID : "33laj4vp7ci5al5j2v14vsefuq"
+  COGNITO_USER_POOL_ID : "us-east-1_y1pshH9YE"
+  COGNITO_APP_CLIENT_ID : "620pid092crckthlag7co28tjt"
   COGNITO_DOMAIN : "https://weather-scanner-app.auth.us-east-1.amazoncognito.com"
   COGNITO_REDIRECT_URI : "https://34.128.177.59.nip.io/cognito/google/callback/"
   LOGOUT_REDIRECT_URI : "https://34.128.177.59.nip.io/login/"
   DOMAIN : "https://34.128.177.59.nip.io"
   COGNITO_IDENTITY_PROVIDER : "Google"
-  MONGO_DB_URI : "mongodb://foo:mustbeeightchars@weather-scanner-nlb-f8d010d733f7f569.elb.eu-west-1.amazonaws.com:27017/weather_scanner?tls=true&retryWrites=false&tlsInsecure=true&directConnection=true"
+  MONGO_DB_URI : "mongodb://foo:mustbeeightchars@weather-scanner-nlb-d89d684d58be84de.elb.eu-west-1.amazonaws.com:27017/weather_scanner?tls=true&retryWrites=false&tlsInsecure=true&directConnection=true"
   AWS_CONFIG_FILE : /.aws/credentials
