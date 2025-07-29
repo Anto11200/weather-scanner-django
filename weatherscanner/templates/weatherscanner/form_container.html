@@ -28,7 +28,7 @@
     </div>
 
     <div class="social-login-options">
-        <a href="{{ COGNITO_DOMAIN }}/oauth2/authorize?response_type=code&client_id={{ COGNITO_APP_CLIENT_ID }}&redirect_uri={{ COGNITO_REDIRECT_URI }}&identity_provider=Google&scope=openid%20profile%20email" class="google-login-button">
+        <a href="{{ COGNITO_DOMAIN }}/oauth2/authorize?response_type=code&client_id={{ COGNITO_APP_CLIENT_ID }}&redirect_uri={{ COGNITO_REDIRECT_URI }}&identity_provider=Google&scope=openid%20profile%20email&prompt=select_account" class="google-login-button">
             <img src="{% static 'images/google_logo.png' %}" alt="Google logo" class="google-logo">
             Accedi con Google
         </a>
