@@ -100,7 +100,7 @@ def login_view(request):
 #     logout(request)
 #     return JsonResponse({'success': 'Disconnessione avvenuta', 'redirect': '/login/'})
 
-@api_view(['POST'])
+@api_view(['GET'])
 def logout_view(request):
     if not request.user.is_authenticated:
         return JsonResponse({'error': 'Nessun utente connesso'}, status=400)
@@ -109,6 +109,7 @@ def logout_view(request):
     logout(request)
     cognito_logout_url = (
         f"{settings.COGNITO_DOMAIN}/logout?"
+        "response_type=code&"
         f"client_id={settings.COGNITO_APP_CLIENT_ID}&"
         f"logout_uri={settings.LOGOUT_REDIRECT_URI}"
     )
